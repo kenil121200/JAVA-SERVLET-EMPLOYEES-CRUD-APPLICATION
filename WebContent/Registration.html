@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    
+</head>
+<body>
+    <h1 align="center">Registration Form</h1>
+  <form action="InsertServlet" method="POST">
+      <table class="table" >
+          <tr>
+              <td class="font">FirstName:-</td><td><input type="text" name="FirstName" id="" placeholder="FirstName" ></td>
+              <td  class="font">MiddleName:-</td><td><input type="text" name="MiddleName" id="" placeholder="MiddleName" ></td>
+              <td class="font">LastName:-</td><td><input type="text" name="LastName" placeholder="LastName" id="" ></td>
+          </tr>
+          <tr>
+              <td class="font">BirthDate:-</td>
+              <td><input type="date" name="BirthDate" id="" required value="2018-07-22"></td>
+          </tr>
+          <tr>
+              <td class="font">Gender:-</td>
+              <td ><input type="radio" name="Gender" id="" value="Male" checked >Male
+              <input type="radio" name="Gender" id="" value="Female">Female
+              <input type="radio" name="Gender" id="" value="Other">Other</td>
+          </tr>
+          <tr>
+              <td class="font">Email:-</td>
+              <td><input type="email" name="Email" id="" placeholder="Email" ></td>
+          </tr>
+          <tr>
+              <td class="font">Password:-</td>
+              <td><input type="password" name="Password" id="" placeholder="Password" ></td>
+          </tr>
+          <tr>
+              <td class="font">Contact No:-</td>
+              <td><input type="text" name="Contact" id="" placeholder="ContactNo" required></td>
+          </tr>
+          <tr>
+              <td class="font">Address:-</td><td><textarea  name="Address" placeholder="Enter Address here....." ></textarea></td>
+          </tr>
+          <tr>
+              <td class="font">Pincode:-</td>
+              <td><input type="text" name="Pincode" id="" placeholder="Pincode" ></td>
+          </tr>
+          <tr>
+              <td class="font">State:-</td>
+              <td><input type="text" name="State" id="" placeholder="State" ></td>
+              <td class="font">City:-</td>
+              <td><input type="text" name="City" id="" placeholder="City" ></td>
+          </tr>
+          <tr><td><input type="submit" value="Submit" id="btn-submit"></td></tr>
+      </table>
+  </form>    
+  <a href="ListEmployeesServlet">Display Record</a>
+</body>
+</html>
